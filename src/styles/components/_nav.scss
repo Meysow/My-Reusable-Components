@@ -1,0 +1,82 @@
+.navContainer {
+  background-color: #fafbfd;
+  min-width: 16.93rem;
+  min-height: 95vh;
+  padding: 3.36rem 3rem;
+  .fixedContainer {
+    position: fixed;
+  }
+
+  .devChallLink {
+    margin-bottom: 6.71rem;
+    padding-left: 1rem;
+
+    a {
+      font-family: $font-2;
+      font-size: 0.93rem;
+      font-weight: 600;
+      text-decoration: none;
+      color: $grey-1;
+      span {
+        color: #f7542e;
+      }
+    }
+  }
+
+  .linksContainer {
+    ul {
+      li {
+        margin-bottom: 0.71rem;
+
+        a {
+          display: block;
+          padding: 0.28rem 0rem 0.28rem 1rem;
+          width: 100%;
+          font-family: $font-1;
+          font-weight: 500;
+          color: $grey-4;
+          border: 1px solid transparent;
+          transition: 0.3s;
+          -webkit-transition: 0.3s;
+          -moz-transition: 0.3s;
+          -ms-transition: 0.3s;
+          -o-transition: 0.3s;
+
+          &:hover {
+            color: $grey-1;
+            text-shadow: -0.25px -0.25px 0 $grey-1, 0.25px 0.25px $grey-1;
+            background-color: #ffffff;
+            border: 1px solid #dbdbdb;
+            border-radius: 5px;
+            box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.2),
+              0 6px 20px 0 rgba(0, 0, 0, 0.19);
+          }
+        }
+
+        .activeLink {
+          color: $grey-1;
+          text-shadow: -0.25px -0.25px 0 $grey-1, 0.25px 0.25px $grey-1;
+          background-color: #ffffff;
+          border: 1px solid #dbdbdb;
+          border-radius: 5px;
+          box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.2),
+            0 6px 20px 0 rgba(0, 0, 0, 0.19);
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .navContainer {
+    min-width: 13rem;
+    padding: 1.68rem 1.5rem;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .navContainer {
+    min-width: 11rem;
+    padding: 1.68rem 0.5rem;
+  }
+}
